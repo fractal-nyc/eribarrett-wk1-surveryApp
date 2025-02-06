@@ -17,7 +17,12 @@ datasource db {
 model Survey {
   id Int @id @default(autoincrement())
   question String
-  answer String
+  answer Answer[] @relation("SurveyAnswers")
 }
 
-
+model Answer {
+  id Int @id @default(autoincrement())
+  survey Survey @relation("SurveyAnswers", fields: [surveyId], references: [id])
+  surveyId Int
+  answer String
+}
