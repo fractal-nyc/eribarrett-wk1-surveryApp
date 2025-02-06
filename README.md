@@ -3,8 +3,13 @@
 to do:
 
 data => (data.ts, surveys.ts)
-[] set up mock db using prisma & docker
-[] mock service layer (all the funcs)
+[X] set up mock db using prisma & docker {time: 1hr 15min}
+[X] mock service layer (all the funcs) {time spent: 37min}
+    - create survey, return survey
+    - create new answer, return answer
+    - list all surveys
+    - get a specific survey w/ results
+    [] add details to CRUD operations as specified in Features section of assignment doc
 
 server => (server.ts)
 [] set up server with hello world
