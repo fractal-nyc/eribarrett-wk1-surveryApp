@@ -25,8 +25,8 @@ async function answerSurvey(surveyId: number, answer: string) {
 
 // - list all surveys
 async function listSurveys(){
-    return await prisma.survey.findMany()
-    
+    const allSurveys = await prisma.survey.findMany()
+    return allSurveys
 };
 
 
