@@ -14,7 +14,7 @@ async function createSurvey(question: string) {
 
 // - create new answer, return answer
 
-async function answerSurvey(surveyId: number, answer: string) {
+async function answerSurvey(surveyId: string, answer: string) {
     return await prisma.answer.create({
         data: {
             surveyId,
@@ -32,11 +32,11 @@ async function listSurveys(){
 
 // - get a specific survey w/ results
 
-async function getSurveyById(id: number) { // Promise<{ id: number; question: string; } | undefined> {
+async function getSurveyById(id: string) { // Promise<{ id: number; question: string; } | undefined> {
     const specificSurvey = await prisma.survey.findUnique({
         where: {id},
         include: {
-            answer: true,
+            Answer: true,
         }
     })
     return specificSurvey

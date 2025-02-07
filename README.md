@@ -17,8 +17,10 @@ server => (server.ts)
     [] (need to write get results functionality)
 
 API client => (client.ts)
-[X] set up API client    _____ USE THE DOCS
+[X] set up API client with elysia   _____ USE THE DOCS
 [] test API             _____ USE THE DOCS
+    - read about treaty (eden) and why we use it
+    - "     "   swagger   "   "   "
 
 react => (vite => reactRouter v7)
 [] set up basic react app w/ router
@@ -27,5 +29,6 @@ react => (vite => reactRouter v7)
 [] perform actions (i.e. form submissions)
 
     [] perform styling 
+    [] use uuid's in schema.prisma to change id from int to string with: @id @default(uuid())
 
 
