@@ -18,14 +18,16 @@ server => (server.ts)
 
 API client => (client.ts)
 [X] set up API client with elysia   _____ USE THE DOCS
-[] test API             _____ USE THE DOCS
+[X] test API  [X] GET requests  [] POST
     - read about treaty (eden) and why we use it
     - "     "   swagger   "   "   "
 
 react => (vite => reactRouter v7)
-[] set up basic react app w/ router
-[] frontend talk to server via client (cors here)
-[] set up main routes (4 dif pages)
+[X] set up basic react app w/ router
+[] frontend talk to server via client (use eden treaty here)
+[] set up main routes (4 dif pages) 
+    [X]created routes in frontend/app/routes.ts and corresponding folder & .tsx files
+[] load data into routes via API client  
 [] perform actions (i.e. form submissions)
 
     [] perform styling 

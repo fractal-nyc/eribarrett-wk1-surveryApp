@@ -1,4 +1,4 @@
-import { Elysia, error, t } from 'elysia'
+import { Elysia, t } from 'elysia'
 import { swagger } from '@elysiajs/swagger'
 import { cors } from '@elysiajs/cors'
 import { listSurveys, createSurvey, answerSurvey, getSurveyById } from './surveys';
